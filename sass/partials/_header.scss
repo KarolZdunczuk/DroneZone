@@ -1,0 +1,71 @@
+
+header {
+    background: url('../img/bg.png') no-repeat center center;
+    height: 113vh;
+    background-size: cover;
+
+    .header-container {
+        @extend .container;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+
+        .header-text {
+            margin-top: 20%;
+            margin-bottom: auto;
+            max-width: 700px;
+            text-align: center;
+            color: $FontColorWhite;
+            p {
+                opacity: 0.4;
+            }
+
+
+            .header-button-box {
+                display: flex;
+                justify-content: center;
+                padding: 25px 0;
+                width: 100%;
+                button {
+                    font-size: 20px;
+                    margin: 10px;
+                    
+                    transition: all 1s ease;
+                    &:hover {
+                        background-color: aliceblue;
+                        color: $FontColorLRed;
+                    }
+                    i {
+                        font-size: 20px;
+                        line-height: 0;
+
+                        span {
+                            font-family: 'Raleway', sans-serif;
+                            font-weight: 400;
+                            margin: 0 10px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+        .header-scroll {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $FontColorLGray;
+            padding-bottom: 50px;
+            margin: 20px;
+            opacity: 0.4;
+            padding: 10px;
+            animation: pulse 3s infinite;
+            p {
+                color: $FontColorWhite;
+                margin-top: 0;
+            }
+        }
+        
+    }
+}

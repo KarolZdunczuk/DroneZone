@@ -1,0 +1,49 @@
+.menu {
+    
+   width: 100%;
+    a {
+        color: #FFF;
+    }
+    ul {
+        width: 100%;
+        min-height: 90px;
+        display: flex;
+        align-items: center;
+        
+        li {
+            border: white;
+            margin-top: 10px;
+            padding: 10px;
+            
+             &:hover {
+                
+                    
+                }
+            &:nth-child(2){
+                margin-left: auto;
+            }
+            a {
+                transition: all 0.3s ease;
+               &:active {
+                    
+                }
+                &:hover  {
+                   
+                    background-color: white;
+                 color: $FontColorLRed;
+                    padding: 10px;
+                    border-bottom: 5px solid $FontColorLRed;
+                 
+                }
+                span {
+                    &:first-child {
+                        
+                    }
+                }
+                
+                
+                
+            }
+        }
+    }
+}

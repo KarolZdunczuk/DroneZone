@@ -1,0 +1,43 @@
+
+.icons {
+    
+    background-color: $BgColorLGrey;
+    padding: 0 80px;
+    .icons-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        .icons-group {
+            @extend .container;
+            justify-content: center;
+
+            .icon-box {
+
+                text-align: center;
+                max-width: 250px;
+                margin: 15px;
+                height: 100%;
+
+                h6 {
+                    font-size: $IconHeaderFonSize;
+                    margin: 10px;
+                    font-weight: 900;
+                    letter-spacing: 1.5px;
+
+                }
+                p {
+                    letter-spacing: 0.4px;
+                    line-height: 1.8;
+                    color: $FontColorGray;
+                }
+            }
+        }
+        .icon-button {
+            @extend .blue-button;
+            margin-top: 100px;
+
+        }
+    }
+
+}

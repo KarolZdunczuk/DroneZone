@@ -1,0 +1,37 @@
+.portfolio {
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .portfolio-box {
+        display: flex;
+        height: 100%;
+        .portfolio-img1 {
+            background: url("../img/portfolio2.png") no-repeat center center;
+            background-size: cover;
+        }
+        .portfolio-img2 {
+            background: url("../img/portfolio1.png") no-repeat center center;
+            background-size: cover;
+        }
+        .portfolio-text {
+            padding: 10px;
+
+
+        }
+        .portfolio-box-item {
+            width: 50%;
+            margin: 0;
+            &:nth-child(1) {
+                order: 2;
+            }
+            p {
+                line-height: 2;
+            }
+            .portfolio-button {
+                margin-top: 20px;
+            }
+        }
+
+    }
+}

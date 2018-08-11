@@ -1,0 +1,48 @@
+.blue-button {
+    @include transition;
+    @include border-radius(25px);
+    background-color: #274799;
+    color: #FFF;
+    border: 0;
+    padding: 18px 42px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #274799;
+
+    &:hover {
+        box-shadow: inset 200px 0 0 0 #FFF;
+        color: #274799;
+        border: 1px solid #274799;
+
+
+    }
+
+}
+
+.white-button {
+    @include shadow(1);
+    @include border-radius(25px);
+    border: none;
+    padding: 22px 50px;
+    background: none;
+    border: 1px solid lightgray;
+    color: $FontColorWhite;
+    font-size: $ButtonFonSize;
+    line-height: 0;
+    letter-spacing: 1px;
+}
+
+.input-button {
+    @include shadow(1);
+    @include border-radius-right(0);
+    border: none;
+    padding: 20px 50px;
+    background: none;
+
+    color: $FontColorWhite;
+    font-size: $ButtonFonSize;
+    line-height: 0;
+    letter-spacing: 1px;
+}
