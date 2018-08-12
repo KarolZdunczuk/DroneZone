@@ -5,54 +5,51 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    
-        .newsletter-box{
+
+    .newsletter-box {
         display: flex;
         flex-direction: column;
         align-content: center;
-        justify-content: flex-start;
+        justify-content: center;
         padding: 10px;
-            h2 {
-                color: $FontColorWhite;
-                padding: 40px;
-            }
-            .newsletter-input-box {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                input {
-                    @include shadow(1);
+        h2 {
+            color: $FontColorWhite;
+            padding: 40px;
+        }
+        .newsletter-input-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            input {
+                @include shadow(1);
+                color: rgba(255, 255, 255, .5);
+                padding: 15px 30px;
+                border: 1px solid rgba(255, 255, 255, .2);
+                @include border-radius-right(0);
+                font-size: 18px;
+                background: rgba(255, 255, 255, .1);
+                height: 50px;
+                max-width: 300px;
+                &::placeholder {
                     color: rgba(255, 255, 255, .5);
-                    padding: 15px 30px;
-                    border: 1px solid rgba(255, 255, 255, .2);
-                    @include border-radius-right(0);
-                    font-size: 18px;
-                    background: rgba(255, 255, 255, .1);
-                    height:50px;
-                    max-width: 300px;
-                    &::placeholder {
-                       color: rgba(255, 255, 255, .5);
-                    
-                    } 
-                    &:focus {
-                         outline: none;
-                    }
-                    
                 }
-                .input-button {
-                    @include border-radius(25px);
-                    background-color:  #fff;
-                    color: $FontColorLRed;
-                    margin-left: -50px;
-                    height: 50px;
-                    transition: all 1s ease;
-                    
-                    &:hover {
-                        color: aliceblue;
-                        background-color:$FontColorLRed; 
-                    }
+                &:focus {
+                    outline: none;
                 }
             }
+            .input-button {
+                @include border-radius(25px);
+                background-color: #fff;
+                color: $FontColorLRed;
+                margin-left: -50px;
+                height: 50px;
+                transition: all 1s ease;
+                &:hover {
+                    color: aliceblue;
+                    background-color: $FontColorLRed;
+                }
+            }
+        }
     }
 }

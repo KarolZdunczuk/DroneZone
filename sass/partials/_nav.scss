@@ -1,6 +1,5 @@
 .menu {
-    
-   width: 100%;
+    width: 100%;
     a {
         color: #FFF;
     }
@@ -9,40 +8,24 @@
         min-height: 90px;
         display: flex;
         align-items: center;
-        
         li {
             border: white;
             margin-top: 10px;
             padding: 10px;
-            
-             &:hover {
-                
-                    
-                }
-            &:nth-child(2){
+            &:nth-child(1) {
+                font-size: $SectionHeaderFonSize;
+            }
+            &:nth-child(2) {
                 margin-left: auto;
             }
             a {
                 transition: all 0.3s ease;
-               &:active {
-                    
-                }
-                &:hover  {
-                   
+                &:hover {
                     background-color: white;
-                 color: $FontColorLRed;
+                    color: $FontColorLRed;
                     padding: 10px;
                     border-bottom: 5px solid $FontColorLRed;
-                 
                 }
-                span {
-                    &:first-child {
-                        
-                    }
-                }
-                
-                
-                
             }
         }
     }

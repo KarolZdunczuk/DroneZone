@@ -1,26 +1,20 @@
-
 header {
     background: url('../img/bg.png') no-repeat center center;
-    height: 113vh;
+    height: 100vh;
     background-size: cover;
-
     .header-container {
-        @extend .container;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
-
+        height: 100%;
         .header-text {
-            margin-top: 20%;
-            margin-bottom: auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
             max-width: 700px;
             text-align: center;
             color: $FontColorWhite;
             p {
                 opacity: 0.4;
             }
-
-
             .header-button-box {
                 display: flex;
                 justify-content: center;
@@ -29,7 +23,7 @@ header {
                 button {
                     font-size: 20px;
                     margin: 10px;
-                    
+
                     transition: all 1s ease;
                     &:hover {
                         background-color: aliceblue;
@@ -38,7 +32,6 @@ header {
                     i {
                         font-size: 20px;
                         line-height: 0;
-
                         span {
                             font-family: 'Raleway', sans-serif;
                             font-weight: 400;
@@ -47,7 +40,6 @@ header {
                         }
                     }
                 }
-
             }
         }
         .header-scroll {
@@ -56,16 +48,13 @@ header {
             justify-content: center;
             align-items: center;
             color: $FontColorLGray;
-            padding-bottom: 50px;
-            margin: 20px;
+            margin-top: 30%;
             opacity: 0.4;
             padding: 10px;
             animation: pulse 3s infinite;
             p {
                 color: $FontColorWhite;
-                margin-top: 0;
             }
         }
-        
     }
 }

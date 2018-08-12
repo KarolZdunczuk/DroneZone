@@ -1,6 +1,6 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
     section {
-        padding: 0;
+        padding: 5px;
     }
     header {
         height: 100%;
@@ -8,147 +8,93 @@
             display: none;
         }
         .toogle-menu-container {
-                display:flex;
-            background-color: rebeccapurple;
-            widows: a
-            }
+            display: flex;
+        }
         .header-container {
             height: 100vh;
-            
+            .header-text {
+                margin-top: 100px;
+            }
+            .header-scroll {
+                margin-top: auto;
+            }
         }
-    
-   
-    .header-button-box {
-        flex-direction: column;
-
-        justify-content: space-between;
-        .white-button {
-            margin: 50px 0;
-        }
-        .margin {
-            margin-bottom: 10px;
-
+        .header-button-box {
+            flex-direction: column;
+            justify-content: space-between;
+            .white-button {
+                margin: 50px 0;
+            }
+            .margin {
+                margin-bottom: 10px;
+            }
         }
     }
-        }
+
     .icons {
         padding: 0;
         .icons-group {
-           
             display: flex;
             flex-direction: column;
-
-
+        }
     }
-        .info {
+
+    .info {
+        .info-container {
             flex-direction: column;
-            margin-left: 0;
-            padding: 0;
-            .info-container {
-                
-        flex-direction: column;
-        
-        .info-text {
-            
-            h2 {
-               margin: 20px !important; 
-            }
-            p {
-                
-            }
-            .info-group {
-                
-
-                .info-box {
-                    
+            .info-text {
+                margin-left: auto;
+                h2 {}
+                .info-group {
                     display: flex;
-                    max-width: 310px;
-                    margin-top: 30px;
-                    margin-right: 10px;
-                    &:nth-child(1) {
-                        order: 1;
-                    }
-                    &:nth-child(2) {
-                        order: 4;
-                    }
-                    &:nth-child(3) {
-                        order: 3;
-                    }
-                    &:nth-child(4) {
-                        order: 2;
-                    }
-                    &:nth-child(5) {
-                        order: 1;
-                    }
-
-                    .info-num {
-                        p {}
-                    }
-                    .num-text {}
+                    justify-content: center;
+                    align-items: center;
                 }
             }
         }
     }
-    }
-    
-        }
-   
+
     .portfolio {
         padding: 0;
         height: 100%;
         .portfolio-box {
-           
             height: 100%;
             flex-direction: column;
             height: 100%;
             .portfolio-box-item {
-                 margin:0;
+                margin: 0;
                 padding: 0;
                 height: 50vh;
                 width: 100%;
-                &:nth-child(1) { order: 1; }
-                    &:nth-child(2) { order: 2; }
-                   
+                &:nth-child(1) {
+                    order: 1;
+                }
+                &:nth-child(2) {
+                    order: 2;
+                }
                 h2 {
                     padding: 20px 0;
-                } 
+                }
             }
             .portfolio-text {
-                &:first-child{
+                &:first-child {
                     order: 2;
                 }
             }
         }
     }
-    .newsletter{
+    .newsletter {
         .newsletter-box {
             .newsletter-input-box {
-                input{
+                input {
                     padding: 15px;
                     min-width: 200px;
                     font-size: 12px;
                 }
-                .input-button{
+                .input-button {
                     padding: 10px 20px;
                 }
             }
-        } 
+        }
     }
-
-
-
-
-
-
-
-
-    /* Smartphones (portrait) ----------- */
-    @media only screen and (max-width: 320px) {
-        /* Styles */
-    }
-
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-        /* Styles */
-    }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
 }
