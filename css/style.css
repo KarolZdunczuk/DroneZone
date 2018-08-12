@@ -35,17 +35,15 @@
   border-radius: 25px;
   background-color: #274799;
   color: #FFF;
-  border: 0;
+  border: 2px solid #274799;
   padding: 18px 42px;
-  display: inline-block;
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #274799; }
+  -webkit-transform-style: preserve-3d; }
   .blue-button:hover, .icons .icons-container .icon-button:hover {
-    box-shadow: inset 200px 0 0 0 #FFF;
-    color: #274799;
-    border: 1px solid #274799; }
+    box-shadow: inset 200px 0  #FFF;
+    color: #274799; }
 
 .white-button {
   -webkit-box-shadow: 10px 10px 43px -1px rgba(0, 0, 0, 0.33);
@@ -338,6 +336,7 @@ header {
       .portfolio .portfolio-box .portfolio-box-item p {
         line-height: 2; }
       .portfolio .portfolio-box .portfolio-box-item .portfolio-button {
+        @extent .blue-button;
         margin-top: 20px; }
 
 .map {

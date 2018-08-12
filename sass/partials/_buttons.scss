@@ -3,22 +3,18 @@
     @include border-radius(25px);
     background-color: #274799;
     color: #FFF;
-    border: 0;
+    border: 2px solid #274799;
     padding: 18px 42px;
-    display: inline-block;
     font-size: 14px;
     letter-spacing: 1px;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 #274799;
-
+    
+    -webkit-transform-style: preserve-3d;
+    
     &:hover {
-        box-shadow: inset 200px 0 0 0 #FFF;
+        box-shadow: inset 200px 0  #FFF;
         color: #274799;
-        border: 1px solid #274799;
-
-
     }
-
 }
 
 .white-button {

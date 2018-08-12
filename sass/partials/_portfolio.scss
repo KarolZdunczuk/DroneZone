@@ -27,6 +27,7 @@
                 line-height: 2;
             }
             .portfolio-button {
+                @extent .blue-button;
                 margin-top: 20px;
             }
         }
