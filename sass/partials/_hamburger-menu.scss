@@ -83,7 +83,8 @@
             > li {
                 opacity: 1;
                 transition-delay: 0.3s;
-                a {
+                a {font-family: 'Raleway', sans-serif;
+                    
                     &:focus {}
                 }
             }
