@@ -16,18 +16,20 @@
         }
         .portfolio-text {
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        
         }
         .portfolio-box-item {
             width: 50%;
             margin: 0;
-            &:nth-child(1) {
-                order: 2;
-            }
+            
             p {
                 line-height: 2;
             }
             .portfolio-button {
-                
                 margin-top: 50px;
             }
         }
