@@ -215,14 +215,14 @@ header {
       right: 20%; }
       .toogle-menu-container input ~ nav > ul > li {
         opacity: 0;
-        transition: .5s;
+        transition: .2s;
         transition-delay: 0s; }
         .toogle-menu-container input ~ nav > ul > li > a {
           text-decoration: none;
           text-transform: uppercase;
           color: #cb0035;
           font-weight: 700;
-          font-family: sans-serif;
+          font-family: 'Raleway', sans-serif;
           display: block;
           padding: 30px; }
   .toogle-menu-container input:checked ~ nav {
@@ -460,6 +460,15 @@ footer {
       height: 100%;
       flex-direction: column;
       height: 100%; }
+      .portfolio .portfolio-box .portfolio-img {
+        width: 100%;
+        height: auto;
+        opacity: 0.9;
+        -webkit-transition: .3s ease-in-out;
+        transition: .7s ease-in-out; }
+        .portfolio .portfolio-box .portfolio-img:hover {
+          opacity: 1;
+          width: 100%; }
       .portfolio .portfolio-box .portfolio-box-item {
         margin: 0;
         padding: 0;
@@ -487,7 +496,7 @@ body {
   font-family: 'Raleway', sans-serif; }
 
 .bold {
-  font-weight: 700; }
+  font-weight: 900; }
 
 h2 {
   font-size: 34px; }

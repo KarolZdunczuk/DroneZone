@@ -1,6 +1,6 @@
 .toogle-menu-container {
     display: none;
-    input + label {
+    input + label {      
         position: fixed;
         top: 40px;
         right: 40px;
@@ -61,15 +61,14 @@
             right: 20%;
             > li {
                 opacity: 0;
-                transition: .5s;
+                transition: .2s;
                 transition-delay: 0s;
                 > a {
                     text-decoration: none;
                     text-transform: uppercase;
                     color: $FontColorLRed;
-                    ;
                     font-weight: 700;
-                    font-family: sans-serif;
+                    font-family: 'Raleway', sans-serif;
                     display: block;
                     padding: 30px;
                 }

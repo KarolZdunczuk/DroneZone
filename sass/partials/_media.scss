@@ -61,6 +61,18 @@
             height: 100%;
             flex-direction: column;
             height: 100%;
+            .portfolio-img {
+                width: 100%;
+                height: auto;
+                opacity: 0.9;
+                -webkit-transition: .3s ease-in-out;
+                transition: .7s ease-in-out;
+
+                &:hover {
+                    opacity: 1;
+                    width: 100%;
+                }
+            }
             .portfolio-box-item {
                 margin: 0;
                 padding: 0;
